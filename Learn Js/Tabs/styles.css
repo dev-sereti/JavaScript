@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.tabs {
+  border: 2px solid #00000030;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 700px;
+  width: 100%;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-buttons button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #777;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.tab-buttons button.active {
+  font-weight: bold;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.tab-content {
+  display: none;
+  padding: 1rem 0;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.content-box {
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
