@@ -8,6 +8,9 @@ document.getElementById("calculateBtn").addEventListener("click"),()=>{
     }
     const birthDateObj=new Date(birthDate);
     const today=Date();
+
+    let years=today.getFullYear()-birthDateObj.getFullYear();
     
+
 
 }
