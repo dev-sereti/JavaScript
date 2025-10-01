@@ -6,5 +6,8 @@ document.getElementById("calculateBtn").addEventListener("click"),()=>{
         result.textContent="Please enter your age";
         return;
     }
+    const birthDateObj=new Date(birthDate);
+    const today=Date();
+    
 
 }
