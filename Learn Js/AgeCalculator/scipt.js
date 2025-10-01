@@ -10,7 +10,7 @@ document.getElementById("calculateBtn").addEventListener("click"),()=>{
     const today=Date();
 
     let years=today.getFullYear()-birthDateObj.getFullYear();
-    
+    let months=today.getMonth()-birthDateObj.getMonth();
 
 
 }
