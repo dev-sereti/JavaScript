@@ -1,19 +1,18 @@
-const textArea=document.getElementById("message");
-const counter =document.getElementById("counter");
-const maxLenght=250;
+const textarea = document.getElementById("message");
+const counter = document.getElementById("counter");
+const maxLength = 250;
 
-textArea.addEventListener("input",()=>{
-    let currentLength=textArea.ariaValueMax.length;
-    counter.textContent=`${currentLength}/ ${maxLenght}`;
+textarea.addEventListener("input", () => {
+  let currentLength = textarea.value.length;
 
-    if(currentLength>=maxLenght){
-        textArea.classList.add("limit");
-        counter.classList.add("limit");
-        textArea.value=textArea.value.substring(0,maxLenght);
+  counter.textContent = `${currentLength} / ${maxLength}`;
 
-    }else{
-        textArea.classList.remove("limit");
-        counter.classList.remove("limit");
-    }
-
+  if (currentLength >= maxLength) {
+    textarea.classList.add("limit");
+    counter.classList.add("limit");
+    textarea.value = textarea.value.substring(0, maxLength); // Prevent extra input
+  } else {
+    textarea.classList.remove("limit");
+    counter.classList.remove("limit");
+  }
 });
