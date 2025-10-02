@@ -12,6 +12,11 @@ document.getElementById("calculateBtn").addEventListener("click",()=>{
   let years=today.getFullYear()-birth.getFullYear();
   let months=today.getMonth()-birth.getMonth();
 
+  if(months<0){
+    years--;
+    months+=12;
+  }
+
   result.innerHTML=`You are ${years} years  and ${months} months old`;
 
 }) ;
