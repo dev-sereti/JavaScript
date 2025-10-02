@@ -6,5 +6,7 @@ document.getElementById("calculateBtn").addEventListener("click"),()=>{
     result.textContent="Please select your date of birth";
     return;
   }
+  const birth=new Date(birthDate);
+  const month=new Date();
 
 });
