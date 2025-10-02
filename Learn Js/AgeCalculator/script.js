@@ -6,5 +6,6 @@ document.getElementById("calculateBtn").addEventListener("click",()=>{
     result.textContent="Please pick your date of birth"
   }
   const birth=new Date(birthDate);
-  
+  const today=new Date();
+
 });
