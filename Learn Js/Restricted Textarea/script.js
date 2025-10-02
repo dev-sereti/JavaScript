@@ -6,4 +6,12 @@ textArea.addEventListener("input",()=>{
     let currentLength=textArea.ariaValueMax.length;
     counter.textContent=`${currentLength}/ ${maxLenght}`;
 
+    if(currentLength>=maxLenght){
+        textArea.classList.add("limit");
+        counter.classList.add("limit");
+        textArea.value=textArea.value.substring(0,maxLenght);
+        
+
+    }
+
 });
