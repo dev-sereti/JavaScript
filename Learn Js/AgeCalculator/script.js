@@ -1,4 +1,4 @@
-document.getElementById("calculateBtn").addEventListener("click"),()=>{
+document.getElementById("calculateBtn").addEventListener("click",()=>{
   const birthDate=document.getElementById("birthdate").value;
   const result=document.getElementById("result");
 
@@ -14,4 +14,4 @@ document.getElementById("calculateBtn").addEventListener("click"),()=>{
 
   result.innerHTML=`You are ${years} years  and ${months} months old`;
 
-});
+}) ;
