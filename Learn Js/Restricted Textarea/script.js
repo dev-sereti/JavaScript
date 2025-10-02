@@ -1,6 +1,6 @@
 const textArea=document.getElementById("message");
 const counter =document.getElementById("counter");
-const maxLenght=300;
+const maxLenght=250;
 
 textArea.addEventListener("input",()=>{
     let currentLength=textArea.ariaValueMax.length;
