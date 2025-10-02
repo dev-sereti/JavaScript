@@ -7,6 +7,9 @@ document.getElementById("calculateBtn").addEventListener("click"),()=>{
     return;
   }
   const birth=new Date(birthDate);
-  const month=new Date();
+  const today=new Date();
+
+  let years=today.getFullYear()-birth.getFullYear();
+  let months=today.getMonth()-birth.getMonth();
 
 });
