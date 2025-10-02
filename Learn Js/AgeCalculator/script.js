@@ -8,13 +8,13 @@ document.getElementById("calculateBtn").addEventListener("click",()=>{
   const birth=new Date(birthDate);
   const today=new Date();
 
-  let years=birth.getFullYear()-birthDate.getFullYear();
+  let years=today.getFullYear()-birth.getFullYear();
   let months=today.getMonth()-birth.getMonth();
 
   if(months<0){
     years--;
     months+=12;
   }
-  
+
 
 });
