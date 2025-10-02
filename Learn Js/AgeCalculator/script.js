@@ -4,6 +4,7 @@ document.getElementById("calculateBtn").addEventListener("click"),()=>{
 
   if(!birthDate){
     result.textContent="Please select your date of birth";
+    return;
   }
-  
+
 });
