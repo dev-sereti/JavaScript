@@ -3,5 +3,6 @@ const counter =document.getElementById("counter");
 const maxLenght=300;
 
 textArea.addEventListener("input",()=>{
-    
+    let currentLength=textArea.ariaValueMax.length;
+
 });
