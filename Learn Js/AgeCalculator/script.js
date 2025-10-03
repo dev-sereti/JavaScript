@@ -16,4 +16,7 @@ document.getElementById("calculateBtn").addEventListener("click",()=>{
     months+=12;
   }
 
+  age.innerHTML=`You are ${yourAge} and ${months} old`;
+
+
 });
