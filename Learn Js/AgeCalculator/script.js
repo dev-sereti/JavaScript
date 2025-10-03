@@ -5,4 +5,6 @@ document.getElementById("calculateBtn").addEventListener("click",()=>{
   if(!birthDate){
     age.textContent="Select your birth date";
   }
+  const birth=new Date(birthDate);
+  
 });
