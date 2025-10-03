@@ -6,6 +6,9 @@ document.getElementById("calculateBtn").addEventListener("click",()=>{
     age.textContent="Select your birth date";
   }
   const birth=new Date(birthDate);
-  const months=new Date();
+  const today=new Date();
+
+  let yourAge=today.getFullYear()-birth.getFullYear();
+  let months=today.getMonth()-birth.getMonth();
 
 });
