@@ -18,6 +18,8 @@ function addTask(){
         taskList.appendChild(li);
         saveTask(taskText);
         taskInput.value="";
-
+}
+function createTaskElement(taskText){
+    
 }
 
