@@ -9,8 +9,11 @@ textArea.addEventListener("input",()=>{
   let currentLength =textArea.value.length;
   counter.textContent=`${currentLength}/${maxLength}`;
 
-  if(){
-    
+  if(currentLength>=maxLength){
+    textArea.classList.add("limit");
+    counter.classList.add("limit");
+    textArea.value=textArea.value.substring(0,maxLength);
+
   }
 
 });
