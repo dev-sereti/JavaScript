@@ -9,5 +9,8 @@ addBtn.addEventListener("click",addTask);
 
 function addTask(){
     const taskText=taskInput.value.trim();
+    if(taskText==="")
+        alert("Please enter a task.");
+        return;
 }
 
