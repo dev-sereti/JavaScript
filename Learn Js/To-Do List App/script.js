@@ -5,3 +5,7 @@ const taskList=document.getElementById("taskList");
 // Load tasks from localStorage on page load
 window.onload=loadTasks;
 
+addBtn.addEventListener("click",addTask);
+
+
+
