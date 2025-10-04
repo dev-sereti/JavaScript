@@ -7,5 +7,7 @@ window.onload=loadTasks;
 
 addBtn.addEventListener("click",addTask);
 
-
+function addTask(){
+    const taskText=taskInput.value.trim();
+}
 
