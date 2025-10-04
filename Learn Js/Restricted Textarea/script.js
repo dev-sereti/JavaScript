@@ -9,5 +9,9 @@ textArea.addEventListener("input",()=>{
   let currentCounter=textArea.ariaValueMax.maxLength;
   counter=`${currentCounter}/${maxLength}`;
 
+  if(currentCounter>=maxLength){
+
+  }
+
 
 });
