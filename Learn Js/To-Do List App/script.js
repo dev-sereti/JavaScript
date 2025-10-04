@@ -20,6 +20,7 @@ function addTask(){
         taskInput.value="";
 }
 function createTaskElement(taskText){
-    
+    const li =document.getElementById("li");
+
 }
 
