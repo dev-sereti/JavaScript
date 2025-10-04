@@ -21,6 +21,9 @@ function addTask(){
 }
 function createTaskElement(taskText){
     const li =document.getElementById("li");
+    li.textContent=taskText;
+
+    
 
 }
 
