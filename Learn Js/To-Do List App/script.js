@@ -12,5 +12,8 @@ function addTask(){
     if(taskText==="")
         alert("Please enter a task.");
         return;
+
+        const li =createTaskElement(taskText);
+        
 }
 
