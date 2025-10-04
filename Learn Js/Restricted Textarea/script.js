@@ -6,5 +6,7 @@ const maxLength=400;
 // textArea input addEventListener
 
 textArea.addEventListener("input",()=>{
+  let currentCounter=textArea.ariaValueMax.maxLength;
+
   
 });
