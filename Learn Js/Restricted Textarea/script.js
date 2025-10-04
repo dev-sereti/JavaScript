@@ -13,7 +13,8 @@ textArea.addEventListener("input",()=>{
     textArea.classList.add("limit");
     counter.classList.add("limit");
     textArea.value=textArea.value.substring(0,maxLength);
-
+  }else{
+    textArea.classList.remove("limit");
+    counter.classList.remove("limit");
   }
-
 });
