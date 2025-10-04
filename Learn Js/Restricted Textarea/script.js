@@ -3,9 +3,9 @@ const counter=document.getElementById("counter");
 const maxLength=400;
 
 textArea.addEventListener("input",()=>{
-  let currentLength=textArea.value.maxLength;
+  let currentLength=textArea.value.length;
 
-  counter= `${currentLength} / ${maxLength}`;
+  counter.textContent= `${currentLength} / ${maxLength}`;
 
   if(currentLength>=maxLength){
     textArea.classList.add("limit");
