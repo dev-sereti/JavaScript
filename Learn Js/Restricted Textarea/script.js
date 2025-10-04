@@ -7,6 +7,6 @@ const maxLength=400;
 
 textArea.addEventListener("input",()=>{
   let currentLength =textArea.value.length;
-  
+  counter.textContent=`${currentLength}/${maxLength}`;
 
 });
