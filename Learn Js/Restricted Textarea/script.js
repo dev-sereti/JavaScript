@@ -10,7 +10,11 @@ textArea.addEventListener("input",()=>{
   counter=`${currentCounter}/${maxLength}`;
 
   if(currentCounter>=maxLength){
-
+    textArea.classlist.add("limit");
+    counter.classList.add("limit");
+    textArea.value=textArea.value.substring(0,maxLength);
+  }else{
+    
   }
 
 
