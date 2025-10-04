@@ -5,6 +5,7 @@ const taskList=document.getElementById("taskList");
 // Load tasks from localStorage on page load
 window.onload=loadTasks;
 
+//Execute function addTask when addBtn is clicked.
 addBtn.addEventListener("click",addTask);
 
 function addTask(){
@@ -14,6 +15,9 @@ function addTask(){
         return;
 
         const li =createTaskElement(taskText);
-        
+        taskList.appendChild(li);
+        saveTask(taskText);
+        taskInput.value="";
+
 }
 
