@@ -45,7 +45,7 @@ function createTaskElement(){
 // Save to localStorage
 function saveTask(){
     let tasks=JSON.parse(localStorage.getItem("tasks")) || [];//Get existing tasks from localStorage
-    tasks.push(taskText);
+    tasks.push(taskText); //Add the new task to the array
     localStorage.setItem("tasks",JSON.stringify(tasks));
 }
 
