@@ -49,4 +49,13 @@ function saveTask(){
     tasks.push(taskText); //Add the new task to the array
     localStorage.setItem("tasks",JSON.stringify(tasks)); //Save the updated array back to localStorage
 }
+// Remove from localStorage
+
+function removeTask(taskText) {
+  let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+  tasks = tasks.filter(task => task !== taskText);
+  localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+
 
