@@ -11,7 +11,8 @@ function addTask(){
     if(taskText==="")return;
 
     //Create a new task <li> element
-    const li=createElement(taskText);
+    const li = createTaskElement(taskText);
+
     taskList.appendChild(li);//Add the task to the task list
     saveTask(taskText);//Save the task to localStorage
     taskInput.value="";//Clear the input field
@@ -19,7 +20,13 @@ function addTask(){
 }
 
 // Create Element.
-function createElement(){
+function createTaskElement(){
+    const li=document.createElement("li");//Create a new <li> element
+    li.textContent=taskText;
+
+    li.addEventListener("click",()=>{
+        li.classList.toggle("completed");
+    });
 
 }
 
