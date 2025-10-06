@@ -33,6 +33,7 @@ function createTaskElement(){
     deleteBtn.textContent="X";
     deleteBtn.className="delete";
 
+    //Add click functionality
     deleteBtn.addEventListener("click",(e)=>{
         e.stopPropagation();// Prevent triggering complete toggle
         li.remove();
