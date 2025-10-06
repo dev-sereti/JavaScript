@@ -13,7 +13,7 @@ function addTask(){
     //Create a new task <li> element
     const li=createElement(taskText);
     taskList.appendChild(li);//Add the task to the task list
-    saveTask(taskText);
+    saveTask(taskText);//Save the task to localStorage
     taskInput.value="";
     
 }
