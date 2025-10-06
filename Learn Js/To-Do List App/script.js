@@ -43,5 +43,9 @@ function createTaskElement(){
     return li;//Return the final <li>
 }
 // Save to localStorage
-
+function saveTask(){
+    let tasks=JSON.parse(localStorage.getItem("tasks")) || [];//Get existing tasks from localStorage
+    tasks.push(taskText);
+    localStorage.setItem("tasks",JSON.stringify(tasks));
+}
 
