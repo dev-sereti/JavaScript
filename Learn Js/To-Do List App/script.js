@@ -22,7 +22,7 @@ function addTask(){
 // Create Element.
 function createTaskElement(){
     const li=document.createElement("li");//Create a new <li> element
-    li.textContent=taskText;
+    li.textContent=taskText;//Insert the task text
 
     li.addEventListener("click",()=>{
         li.classList.toggle("completed");
