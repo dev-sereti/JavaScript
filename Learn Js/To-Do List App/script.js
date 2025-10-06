@@ -24,8 +24,9 @@ function createTaskElement(){
     const li=document.createElement("li");//Create a new <li> element
     li.textContent=taskText;//Insert the task text
 
+    //Add a click event listener
     li.addEventListener("click",()=>{
-        li.classList.toggle("completed");
+        li.classList.toggle("completed");//Whenever the user clicks on this list item, toggle the CSS class completed
     });
 
 }
