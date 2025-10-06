@@ -37,7 +37,7 @@ function createTaskElement(){
     deleteBtn.addEventListener("click",(e)=>{
         e.stopPropagation();// Prevent triggering complete toggle
         li.remove();//Removes the whole <li> element (the task) from the page
-        removeTask(taskText);
+        removeTask(taskText);//Calls a function to also delete the task from localStorage
     });
     li.appendChild(deleteBtn);
     return li;
