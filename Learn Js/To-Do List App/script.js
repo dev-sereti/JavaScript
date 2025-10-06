@@ -35,6 +35,8 @@ function createTaskElement(){
 
     deleteBtn.addEventListener("click",(e)=>{
         e.stopPropagation();// Prevent triggering complete toggle
+        li.remove();
+        removeTask(taskText);
     });
 
 
