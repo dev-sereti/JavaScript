@@ -29,7 +29,7 @@ function createTaskElement(){
         li.classList.toggle("completed");//Whenever the user clicks on this list item, toggle the CSS class completed
     });
 
-    const deleteBtn=document.createElement("Button");
+    const deleteBtn=document.createElement("Button");//Create a delete button
     deleteBtn.textContent="X";
     deleteBtn.className="delete";
 
@@ -38,7 +38,8 @@ function createTaskElement(){
         li.remove();
         removeTask(taskText);
     });
-
+    li.appendChild(deleteBtn);
+    return li;
 
 }
 
