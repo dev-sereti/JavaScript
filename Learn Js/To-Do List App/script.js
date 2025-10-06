@@ -41,6 +41,7 @@ function createTaskElement(){
     });
     li.appendChild(deleteBtn);//Attach the button to the task
     return li;//Return the final <li>
-
 }
+// Save to localStorage
+
 
