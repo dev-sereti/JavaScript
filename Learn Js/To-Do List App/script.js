@@ -36,7 +36,7 @@ function createTaskElement(){
     //Add click functionality
     deleteBtn.addEventListener("click",(e)=>{
         e.stopPropagation();// Prevent triggering complete toggle
-        li.remove();
+        li.remove();//Removes the whole <li> element (the task) from the page
         removeTask(taskText);
     });
     li.appendChild(deleteBtn);
