@@ -39,8 +39,8 @@ function createTaskElement(){
         li.remove();//Removes the whole <li> element (the task) from the page
         removeTask(taskText);//Calls a function to also delete the task from localStorage
     });
-    li.appendChild(deleteBtn);
-    return li;
+    li.appendChild(deleteBtn);//Attach the button to the task
+    return li;//Return the final <li>
 
 }
 
