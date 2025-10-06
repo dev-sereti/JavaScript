@@ -29,5 +29,14 @@ function createTaskElement(){
         li.classList.toggle("completed");//Whenever the user clicks on this list item, toggle the CSS class completed
     });
 
+    const deleteBtn=document.createElement("Button");
+    deleteBtn.textContent="X";
+    deleteBtn.className="delete";
+
+    deleteBtn.addEventListener("click",(e)=>{
+        e.stopPropagation();// Prevent triggering complete toggle
+    });
+
+
 }
 
