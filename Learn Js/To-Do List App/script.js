@@ -14,7 +14,7 @@ function addTask(){
     const li=createElement(taskText);
     taskList.appendChild(li);//Add the task to the task list
     saveTask(taskText);//Save the task to localStorage
-    taskInput.value="";
+    taskInput.value="";//Clear the input field
     
 }
 
