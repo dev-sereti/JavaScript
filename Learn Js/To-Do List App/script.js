@@ -88,7 +88,9 @@ function loadTasks(){
 
   // Loop through each saved task
   tasks.forEach(taskText=>{
-    
+    // For each task, create a new <li> element
+    const li=createTaskElement(taskText);
+
   })
 
 }
