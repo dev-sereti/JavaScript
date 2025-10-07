@@ -59,8 +59,8 @@ function createTaskElement(taskText){
     li.remove();
     // Also remove it from localStorage
     remove(taskText);
-
    });
 
-   
+   // Add the delete button inside the <li>
+   li.appendChild(deleteBtn);
 }
