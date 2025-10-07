@@ -91,6 +91,9 @@ function loadTasks(){
     // For each task, create a new <li> element
     const li=createTaskElement(taskText);
 
-  })
+    // Add it to the task list in the HTML
+    taskList.appendChild(li);
+
+  });
 
 }
