@@ -30,3 +30,9 @@ function addTask(){
   taskInput.value="";
 
 }
+
+// ---------------------- CREATE TASK ELEMENT ----------------------
+function createTaskElement(taskText){
+  
+
+}
