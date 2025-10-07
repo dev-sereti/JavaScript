@@ -63,7 +63,8 @@ function removeTask(taskText) {
 //Filter out (remove) the selected task
   tasks = tasks.filter(task => task !== taskText);//.filter() creates a new array that only keeps the tasks that don’t match taskText.
   //Save the updated list back to localStorage
-  localStorage.setItem("tasks", JSON.stringify(tasks));
+  //Replaces the old "tasks" list in localStorage with the new one.
+  localStorage.setItem("tasks", JSON.stringify(tasks));//Converts the new array back to a string (JSON.stringify)
 }
 // Load tasks on page load
 
