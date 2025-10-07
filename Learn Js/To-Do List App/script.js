@@ -33,6 +33,7 @@ function addTask(){
 
 // ---------------------- CREATE TASK ELEMENT ----------------------
 function createTaskElement(taskText){
-  
+  // Create a new list item (<li>) element
+  const li=document.createElement("li");
 
 }
