@@ -39,6 +39,9 @@ function createTaskElement(taskText){
    // Add the task text inside the <li>
    li.textContent=taskText;
 
-   
-
+   // Add a click event to mark tasks as completed
+   // When clicked, toggle a CSS class "completed"
+   li.addEventListener("click",()=>{
+    li.classList.toggle("completed.");
+   });
 }
