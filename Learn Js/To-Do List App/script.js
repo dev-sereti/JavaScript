@@ -57,6 +57,8 @@ function createTaskElement(taskText){
 
     // Remove the task from the page
     li.remove();
+    // Also remove it from localStorage
+    remove(taskText);
 
    });
 
