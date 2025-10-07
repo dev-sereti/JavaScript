@@ -74,8 +74,11 @@ function saveTask(taskText){
 
   // Create a new array that excludes the deleted task
   // The filter() method keeps only tasks that are NOT equal to taskText.
-
   tasks=tasks.filter(tasks=>task!==taskText);
+
+  // Save the new array back to localStorage (without the deleted task)
+  localStorage.setItem("tasks",JSON.stringify(tasks));
+
 
 
 }
