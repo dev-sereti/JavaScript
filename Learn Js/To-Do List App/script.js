@@ -44,4 +44,7 @@ function createTaskElement(taskText){
    li.addEventListener("click",()=>{
     li.classList.toggle("completed.");
    });
+
+   // Create a delete button for removing tasks
+   const deleteBtn=document.createElement("delete");
 }
