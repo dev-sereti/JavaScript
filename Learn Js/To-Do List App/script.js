@@ -17,4 +17,7 @@ function addTask(){
    // If the input is empty, stop the function (don't add blank tasks)
    if(taskText==="")return;
 
+   // Create a new list item (<li>) element for the task
+   const li =createTaskElement(taskText);
+
 }
