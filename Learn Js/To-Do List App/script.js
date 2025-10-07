@@ -26,4 +26,7 @@ function addTask(){
   // Save the new task in localStorage so it stays even after page refresh
   saveTask(taskText);
 
+  // Clear the input box so user can type a new task
+  taskInput.value="";
+
 }
