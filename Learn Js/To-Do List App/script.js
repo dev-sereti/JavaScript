@@ -50,4 +50,10 @@ function createTaskElement(taskText){
    deleteBtn.textContent="Delete Task"; //The "Delete Task" shown on the button
    deleteBtn.className="delete"; // Assign a CSS class for styling
    
+   // When the delete button is clicked
+   deleteBtn.addEventListener("click",(e)=>{
+    
+   });
+
+   
 }
