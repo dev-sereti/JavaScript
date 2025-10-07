@@ -63,4 +63,7 @@ function createTaskElement(taskText){
 
    // Add the delete button inside the <li>
    li.appendChild(deleteBtn);
+
+   // Return the fully built <li> element
+   return li;
 }
