@@ -47,4 +47,6 @@ function createTaskElement(taskText){
 
    // Create a delete button for removing tasks
    const deleteBtn=document.createElement("delete");
+   deleteBtn.textContent="Delete Task"; //The "Delete Task" shown on the button
+   
 }
