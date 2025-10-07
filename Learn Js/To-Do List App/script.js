@@ -9,5 +9,7 @@ window.onload=loadTasks;
 // When the "Add" button is clicked, run the addTask() function
 addBtn.addEventListener("click",addTask);
 
+// ---------------------- ADD TASK ----------------------
+function addTask(){
 
-
+}
