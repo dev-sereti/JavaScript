@@ -56,7 +56,12 @@ function saveTask(){
 // Remove from localStorage
 
 function removeTask(taskText) {
+  //Get existing tasks from localStorage
+  //Converts it from a string to an array using JSON.parse()
+  //If there’s nothing stored yet, it uses an empty array [] by default.
+
   let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
   tasks = tasks.filter(task => task !== taskText);
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
