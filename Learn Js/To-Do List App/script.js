@@ -20,4 +20,10 @@ function addTask(){
    // Create a new list item (<li>) element for the task
    const li =createTaskElement(taskText);
 
+   // Add (append) that <li> to the main task list in the HTML
+   taskList.appendChild(li);
+
+  // Save the new task in localStorage so it stays even after page refresh
+  saveTask(taskText);
+
 }
