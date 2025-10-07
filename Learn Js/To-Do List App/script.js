@@ -14,4 +14,7 @@ function addTask(){
   // Get the text the user typed, and remove any extra spaces
   const taskText=taskInput.value.trim();
 
+   // If the input is empty, stop the function (don't add blank tasks)
+   if(taskText==="")return;
+
 }
