@@ -52,7 +52,10 @@ function createTaskElement(taskText){
    
    // When the delete button is clicked
    deleteBtn.addEventListener("click",(e)=>{
+    // Prevent the click from also triggering the "complete" toggle
+    e.stopPropagation();
     
+
    });
 
    
