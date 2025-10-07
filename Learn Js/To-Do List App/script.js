@@ -67,3 +67,7 @@ function createTaskElement(taskText){
    // Return the fully built <li> element
    return li;
 }
+// ---------------------- SAVE TASK ----------------------
+function saveTask(taskText){
+
+}
