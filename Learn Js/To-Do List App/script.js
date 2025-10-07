@@ -11,5 +11,7 @@ addBtn.addEventListener("click",addTask);
 
 // ---------------------- ADD TASK ----------------------
 function addTask(){
+  // Get the text the user typed, and remove any extra spaces
+  const taskText=taskInput.value.trim();
 
 }
