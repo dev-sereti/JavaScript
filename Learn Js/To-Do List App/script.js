@@ -83,5 +83,7 @@ function saveTask(taskText){
 // ---------------------- LOAD TASKS ----------------------
 
 function loadTasks(){
-  
+  // Get all tasks saved in localStorage (or an empty array if none)
+  let tasks=JSON.parse(localStorage.getItem("tasks")) || [];
+
 }
