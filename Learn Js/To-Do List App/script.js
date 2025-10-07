@@ -54,7 +54,9 @@ function createTaskElement(taskText){
    deleteBtn.addEventListener("click",(e)=>{
     // Prevent the click from also triggering the "complete" toggle
     e.stopPropagation();
-    
+
+    // Remove the task from the page
+    li.remove();
 
    });
 
