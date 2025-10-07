@@ -78,7 +78,10 @@ function saveTask(taskText){
 
   // Save the new array back to localStorage (without the deleted task)
   localStorage.setItem("tasks",JSON.stringify(tasks));
+}
 
+// ---------------------- LOAD TASKS ----------------------
 
-
+function loadTasks(){
+  
 }
