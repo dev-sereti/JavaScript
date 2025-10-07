@@ -72,6 +72,7 @@ function loadTasks() {
   //Get all stored tasks from localStorage
   let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
   tasks.forEach(taskText => {
+    //Loop through each stored task
     const li = createTaskElement(taskText);
     taskList.appendChild(li);
   });
