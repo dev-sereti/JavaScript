@@ -69,5 +69,8 @@ function createTaskElement(taskText){
 }
 // ---------------------- SAVE TASK ----------------------
 function saveTask(taskText){
+  // Get all saved tasks from localStorage (or an empty array if none)
+  let tasks=JSON.parse(localStorage.getItem(tasks)) || [];
+  
 
 }
