@@ -6,5 +6,8 @@ const taskList=document.getElementById("taskList");
 // When the page loads, call loadTasks() to show saved tasks
 window.onload=loadTasks;
 
+// When the "Add" button is clicked, run the addTask() function
+addBtn.addEventListener("click",addTask);
+
 
 
