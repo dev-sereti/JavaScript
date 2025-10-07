@@ -36,4 +36,9 @@ function createTaskElement(taskText){
   // Create a new list item (<li>) element
   const li=document.createElement("li");
 
+   // Add the task text inside the <li>
+   li.textContent=taskText;
+
+   
+
 }
