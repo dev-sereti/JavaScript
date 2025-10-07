@@ -69,6 +69,7 @@ function removeTask(taskText) {
 // Load tasks on page load
 
 function loadTasks() {
+  //Get all stored tasks from localStorage
   let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
   tasks.forEach(taskText => {
     const li = createTaskElement(taskText);
