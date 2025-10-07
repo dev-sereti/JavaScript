@@ -71,6 +71,11 @@ function createTaskElement(taskText){
 function saveTask(taskText){
   // Get all saved tasks from localStorage (or an empty array if none)
   let tasks=JSON.parse(localStorage.getItem(tasks)) || [];
-  
+
+  // Create a new array that excludes the deleted task
+  // The filter() method keeps only tasks that are NOT equal to taskText.
+
+  tasks=tasks.filter(tasks=>task!==taskText);
+
 
 }
