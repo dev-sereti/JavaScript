@@ -6,4 +6,7 @@ const listTask=document.getElementById("taskList");
 
 // ==== CREATE TASK ELEMENT ===
 
+function createTaskElement(){
+
+}
 
