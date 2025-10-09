@@ -14,8 +14,10 @@ function createTaskElement(textTask){
   // Toggle completion on click
   li.addEventListener("click",()=>{
     li.classList.toggle("completed");
-
   });
+
+  // Create delete button
+  const deleteBtn=document.createElement("button");
 
 }
 
