@@ -11,7 +11,7 @@ function createTaskElement(textTask){
   li.textContent=inputTask.value.trim();
 
   li.addEventListener("click",()=>{
-    
+    li.classList.toggle("completed")
   });
 
 }
