@@ -8,8 +8,11 @@ const listTask=document.getElementById("taskList");
 
 function createTaskElement(textTask){
   const li=document.createElement("li");
-  // Set the task text inside the list item
+  // Set the task text inside the list item.
   li.textContent=textTask; 
+
+  // Toggle completion on click
+  
 
 
 }
