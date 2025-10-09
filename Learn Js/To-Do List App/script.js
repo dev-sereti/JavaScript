@@ -19,8 +19,11 @@ function createTaskElement(textTask){
   deleteBtn.className="delete";
 
   deleteBtn.addEventListener("click",(e)=>{
-    
+    e.stopPropagation;
+    removeTask(textTask);
   });
+  li.appendChild(deleteBtn);
+  return li;
 
 }
 // == ADD TASK ===
