@@ -6,7 +6,11 @@ const listTask=document.getElementById("taskList");
 
 // ==== CREATE TASK ELEMENT ===
 
-function createTaskElement(){
+function createTaskElement(textTask){
+  const li=document.createElement("li");
+  // Set the task text inside the list item
+  li.textContent=textTask; 
+
 
 }
 
