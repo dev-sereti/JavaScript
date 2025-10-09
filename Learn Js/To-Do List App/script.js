@@ -32,7 +32,6 @@ function createTaskElement(textTask){
   //Return the fully built <li> to be used later
   return li;
 }
-
 // == ADD TASK ===
 
 function addTask(){
