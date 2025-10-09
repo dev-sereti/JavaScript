@@ -8,29 +8,8 @@ const listTask=document.getElementById("taskList");
 
 function createTaskElement(textTask){
   const li=document.createElement("li");
-  // Set the task text inside the list item.
-  li.textContent=textTask; 
+  li.textContent=inputTask.value.trim();
 
-  // Toggle completion on click
-  li.addEventListener("click",()=>{
-    li.classList.toggle("completed");
-  });
-
-  // Create delete button
-  const deleteBtn=document.createElement("button");
-  deleteBtn.textContent=X; // Button label
-  deleteBtn.className="delete"; // Add CSS class for styling
-
-  // Add event listener for delete button
-  deleteBtn.addEventListener("click",(e)=>{
-    e.stopPropagation; // prevent completion toggle
-    li.remove; // Remove the task from the page
-    removeTask(textTask);
-  });
-  // add deleteBtn to li element.
-  li.appendChild(deleteBtn);
-  //Return the fully built <li> to be used later
-  return li;
 }
 // == ADD TASK ===
 
