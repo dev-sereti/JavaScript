@@ -22,7 +22,8 @@ function createTaskElement(textTask){
   deleteBtn.className="delete"; // Add CSS class for styling
 
   // Add event listener for delete button
-  deleteBtn.addEventListener("click",()=>{
+  deleteBtn.addEventListener("click",(e)=>{
+    e.stopPropagation; // prevent completion toggle
 
   });
 }
