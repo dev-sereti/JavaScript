@@ -21,6 +21,10 @@ function createTaskElement(textTask){
   deleteBtn.textContent=X; // Button label
   deleteBtn.className="delete"; // Add CSS class for styling
 
+  // Add event listener for delete button
+  deleteBtn.addEventListener("click",()=>{
+
+  });
 }
 
 // == ADD TASK ===
