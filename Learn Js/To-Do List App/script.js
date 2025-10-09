@@ -3,3 +3,7 @@
 const inputTask=document.getElementById("taskInput");
 const btnAdd=document.getElementById("addBtn");
 const listTask=document.getElementById("taskList");
+
+// ==== CREATE TASK ELEMENT ===
+
+
