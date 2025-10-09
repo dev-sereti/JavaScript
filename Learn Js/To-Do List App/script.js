@@ -12,8 +12,8 @@ function createTaskElement(textTask){
   li.textContent=textTask; 
 
   // Toggle completion on click
-
   li.addEventListener("click",()=>{
+    li.classList.toggle("completed");
 
   });
 
