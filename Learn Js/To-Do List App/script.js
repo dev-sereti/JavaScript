@@ -10,3 +10,9 @@ function createTaskElement(){
 
 }
 
+// == ADD TASK ===
+
+function addTask(){
+  const textTask=inputTask.value.trim();
+}
+
