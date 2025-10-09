@@ -14,6 +14,10 @@ function createTaskElement(textTask){
     li.classList.toggle("completed")
   });
 
+  deleteBtn=document.createElement("X")
+  //deleteBtn.textContent=""
+  deleteBtn.className="delete"
+
 }
 // == ADD TASK ===
 
