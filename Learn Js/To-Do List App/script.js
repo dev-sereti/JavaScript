@@ -19,7 +19,7 @@ function createTaskElement(textTask){
   // Create delete button
   const deleteBtn=document.createElement("button");
   deleteBtn.textContent=X; // Button label
-  deleteBtn.className="delete";
+  deleteBtn.className="delete"; // Add CSS class for styling
 
 }
 
