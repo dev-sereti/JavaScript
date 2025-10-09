@@ -26,8 +26,11 @@ function createTaskElement(textTask){
     e.stopPropagation; // prevent completion toggle
     li.remove; // Remove the task from the page
     removeTask(textTask);
-
   });
+  // add deleteBtn to li element.
+  li.appendChild(deleteBtn);
+  //Return the fully built <li> to be used later
+  return li;
 }
 
 // == ADD TASK ===
