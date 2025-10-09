@@ -10,6 +10,10 @@ function createTaskElement(textTask){
   const li=document.createElement("li");
   li.textContent=inputTask.value.trim();
 
+  li.addEventListener("click",()=>{
+    
+  });
+
 }
 // == ADD TASK ===
 
