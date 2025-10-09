@@ -24,6 +24,8 @@ function createTaskElement(textTask){
   // Add event listener for delete button
   deleteBtn.addEventListener("click",(e)=>{
     e.stopPropagation; // prevent completion toggle
+    li.remove; // Remove the task from the page
+    removeTask(textTask);
 
   });
 }
