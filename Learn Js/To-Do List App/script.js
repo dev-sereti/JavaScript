@@ -19,9 +19,10 @@ deleteBtn.textContent="X";
 deleteBtn.className="delete";
 
 deleteBtn.addEventListener("click",(e)=>{
-  
+  e.stopPropagation;
+  li.remove;
 });
-
+li.appendChild(deleteBtn);
 
 }
 // == ADD TASK ===
