@@ -35,5 +35,8 @@ function addTask(){
   // Stop in the input field is empty.
   if(textTask==="");return;
 
+  //Create a new task element.
+  const li=createTaskElement(textTask);
+
 }
 
