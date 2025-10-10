@@ -15,6 +15,11 @@ li.addEventListener("click",()=>{
 });
 
 deleteBtn=document.createElement("button");
+deleteBtn.textContent="X";
+deleteBtn.className="delete";
+
+
+
 
 }
 // == ADD TASK ===
