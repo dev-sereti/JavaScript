@@ -36,7 +36,9 @@ function addTask(){
   
   if(textTask==="")return;
 
+  saveTask(textTask);
   
+
   
 
 
