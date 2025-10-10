@@ -32,12 +32,11 @@ return li;
 function addTask(){
   textTask=inputTask.value.trim();
 
-  const li=createTaskElement("li");
-  
   if(textTask==="")return;
-
+  const li=createTaskElement("li");
   saveTask(textTask);
-  
+  listTask.appendChild(li);
+  textTask.value="";
 
   
 
