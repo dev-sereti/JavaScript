@@ -18,7 +18,9 @@ deleteBtn=document.createElement("button");
 deleteBtn.textContent="X";
 deleteBtn.className="delete";
 
-
+deleteBtn.addEventListener("click",(e)=>{
+  
+});
 
 
 }
