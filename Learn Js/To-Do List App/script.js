@@ -24,11 +24,13 @@ deleteBtn.addEventListener("click",(e)=>{
   removeTask(textTask);
 });
 li.appendChild(deleteBtn);
+return li;
 
 }
 // == ADD TASK ===
 
 function addTask(){
   const textTask=inputTask.value.trim();
+
 }
 
