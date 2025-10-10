@@ -30,25 +30,10 @@ return li;
 // == ADD TASK ===
 
 function addTask(){
-  // Get user input and remove some extra spaces .
-  const textTask=inputTask.value.trim();
-  // Stop in the input field is empty.
-  if(textTask==="");return;
 
-  //Create a new task element.
-  const li=createTaskElement(textTask);
-
-  //Add the new task element to the task list
-  listTask.appendChild(li);
-
-  // Save the task text in localStorage
-
-  saveTask(textTask);
-  //Clear the input box after adding the task
-  inputTask.value="";
 }
 
 function saveTask(){
-  
+
 }
 
