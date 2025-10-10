@@ -33,8 +33,10 @@ function addTask(){
   textTask=inputTask.value.trim();
 
   const li=createTaskElement("li");
+  
+  if(textTask==="")return;
 
- 
+  
 
 
 
