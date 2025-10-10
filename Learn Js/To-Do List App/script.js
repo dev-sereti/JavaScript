@@ -30,7 +30,9 @@ return li;
 // == ADD TASK ===
 
 function addTask(){
+  // Get user input and remove some extra spaces .
   const textTask=inputTask.value.trim();
+
 
 }
 
