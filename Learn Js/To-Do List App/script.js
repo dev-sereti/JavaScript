@@ -14,7 +14,7 @@ li.addEventListener("click",()=>{
   li.classList.toggle("completed");
 });
 
-
+deleteBtn=document.createElement("button");
 
 }
 // == ADD TASK ===
