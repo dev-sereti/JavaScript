@@ -41,5 +41,9 @@ function addTask(){
   //Add the new task element to the task list
   textTask.appendChild(li);
 
+  // Save the task text in localStorage
+
+  saveTask(textTask);
+
 }
 
