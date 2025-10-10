@@ -46,6 +46,9 @@ function addTask(){
   saveTask(textTask);
   //Clear the input box after adding the task
   inputTask.value="";
+}
 
+function saveTask(){
+  
 }
 
