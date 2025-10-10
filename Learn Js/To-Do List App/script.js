@@ -39,11 +39,13 @@ function addTask(){
   const li=createTaskElement(textTask);
 
   //Add the new task element to the task list
-  textTask.appendChild(li);
+  listTask.appendChild(li);
 
   // Save the task text in localStorage
 
   saveTask(textTask);
+  //Clear the input box after adding the task
+  inputTask.value="";
 
 }
 
