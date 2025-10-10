@@ -8,6 +8,13 @@ const listTask=document.getElementById("taskList");
 
 function createTaskElement(textTask){
 const li =document.createElement("li");
+li.textContent=inputTask.value;
+
+li.addEventListener("click",()=>{
+  li.classList.toggle("completed");
+});
+
+
 
 }
 // == ADD TASK ===
