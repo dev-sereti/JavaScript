@@ -32,7 +32,8 @@ return li;
 function addTask(){
   // Get user input and remove some extra spaces .
   const textTask=inputTask.value.trim();
-
+  // Stop in the input field is empty.
+  if(textTask==="");return;
 
 }
 
