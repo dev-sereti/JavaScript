@@ -38,5 +38,8 @@ function addTask(){
   //Create a new task element.
   const li=createTaskElement(textTask);
 
+  //Add the new task element to the task list
+  textTask.appendChild(li);
+
 }
 
