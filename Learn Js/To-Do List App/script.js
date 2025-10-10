@@ -30,6 +30,9 @@ return li;
 // == ADD TASK ===
 
 function addTask(){
+  textTask=inputTask.value.trim();
+
+  
 
 }
 
