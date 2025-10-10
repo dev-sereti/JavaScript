@@ -8,7 +8,7 @@ const listTask=document.getElementById("taskList");
 
 function createTaskElement(textTask){
 const li =document.createElement("li");
-li.textContent=inputTask.value;
+li.textContent=textTask;
 
 li.addEventListener("click",()=>{
   li.classList.toggle("completed");
