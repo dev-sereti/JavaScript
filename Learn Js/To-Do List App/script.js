@@ -31,6 +31,9 @@ function createElementTask(taskText){
   });
   li.appendChild(deleteBtn);
   return li;
+}
 
-
+// === Add task ===
+function addTask(){
+  
 }
