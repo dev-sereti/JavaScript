@@ -30,6 +30,7 @@ function createElementTask(taskText){
     removeTask(taskText);
   });
   li.appendChild(deleteBtn);
+  return li;
 
 
 }
