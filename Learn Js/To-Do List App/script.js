@@ -47,6 +47,8 @@ function addTask(){
   listTask.appendChild(li);
 
   saveTask(taskText); //Save task
+
+  //Clear input after saving
 }
 
 
