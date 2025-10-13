@@ -24,5 +24,8 @@ function createElementTask(taskText){
 
   // When the deleteBtn is clicked.
 
-  
+  deleteBtn.addEventListener("click",(e)=>{
+    e.stopPropagation;
+  });
+
 }
