@@ -43,4 +43,6 @@ function addTask(){
   const li =createElementTask(taskText);
 
   saveTask(taskText);
+
+  listTask.appendChild(li);
 }
