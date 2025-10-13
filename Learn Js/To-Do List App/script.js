@@ -6,7 +6,7 @@ const listTask=document.getElementById("taskList");
 
 function createElementTask(taskText){
   const li=document.createElement("li");
-  li=inputTask.value.trim();
+  li.textContent=taskText;
 
 
   //Create a delete button
@@ -18,7 +18,12 @@ function createElementTask(taskText){
 
   //When the delete btn is clicked.
   deleteBtn.addEventListener("click",(e)=>{
-    
+    e.stopPropagation;
+    li.remove();
+    removeTask(taskText);
   });
+  li.appendChild(deleteBtn);
+  return li;
+
 }
 
