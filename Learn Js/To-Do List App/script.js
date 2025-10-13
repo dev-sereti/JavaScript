@@ -26,8 +26,10 @@ function createElementTask(taskText){
 
   deleteBtn.addEventListener("click",(e)=>{
     e.stopPropagation;
+    li.remove; //Delete li element.
+    removeTask(taskText);
   });
-  li.remove; //Delete li element.
+  li.appendChild(deleteBtn);
 
 
 }
