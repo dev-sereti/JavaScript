@@ -45,6 +45,8 @@ function addTask(){
 
   //Add the new task element to the task list
   listTask.appendChild(li);
+
+  saveTask(taskText); //Save task
 }
 
 
