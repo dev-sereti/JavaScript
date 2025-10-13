@@ -45,4 +45,6 @@ function addTask(){
   saveTask(taskText);
 
   listTask.appendChild(li);
+
+  taskText.value="";
 }
