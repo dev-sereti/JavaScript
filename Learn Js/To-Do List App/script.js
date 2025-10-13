@@ -17,6 +17,10 @@ function createElementTask(taskText){
   // Create a delete button.
 
   deleteBtn=document.createElement("button");
-  
+
+  //Add text content to and className deleteBtn
+  deleteBtn.textContent="X";
+  deleteBtn.className="delete";
+
 
 }
