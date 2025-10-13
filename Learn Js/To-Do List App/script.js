@@ -14,6 +14,9 @@ function createElementTask(taskText){
     li.classList.toggle("completed");
   });
 
+  // Create a delete button.
 
+  deleteBtn=document.createElement("button");
+  
 
 }
