@@ -5,6 +5,8 @@ const btnAdd=document.getElementById("addBtn");
 const listTask=document.getElementById("taskList");
 
 function createElementTask(taskText){
+  const li=document.createElement("li");
+  li=inputTask.value.trim();
   
 
 }
