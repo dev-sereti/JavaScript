@@ -22,5 +22,7 @@ function createElementTask(taskText){
   deleteBtn.textContent="X";
   deleteBtn.className="delete";
 
+  // When the deleteBtn is clicked.
 
+  
 }
