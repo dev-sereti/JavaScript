@@ -39,6 +39,11 @@ function addTask(){
 
   //Check if taskText if empty
   if(taskText==="")return;
+
+  //Create a new task element
+  const li=createElementTask(taskText);
+
+  listTask.appendChild(li);
 }
 
 
