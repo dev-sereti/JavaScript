@@ -34,7 +34,8 @@ function createElementTask(taskText){
 // === ADD TASK ===
 
 function addTask(){
-  
+
+  const taskText=inputTask.value.trim();
 }
 
 
