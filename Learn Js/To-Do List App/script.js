@@ -7,7 +7,12 @@ const listTask=document.getElementById("taskList");
 function createElementTask(taskText){
   const li=document.createElement("li");
   li=inputTask.value.trim();
-  
 
+
+  //Create a delete button
+
+  const deleteBtn=document.createElement("button");
+  deleteBtn.textContent="X";
+  deleteBtn.className="delete";
 }
 
