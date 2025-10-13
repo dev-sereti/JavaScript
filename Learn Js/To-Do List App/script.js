@@ -41,4 +41,6 @@ function addTask(){
   if(taskText==="")return;
 
   const li =createElementTask(taskText);
+
+  saveTask(taskText);
 }
