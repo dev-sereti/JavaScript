@@ -7,6 +7,10 @@ const listTask=document.getElementById("taskList");
 function createElementTask(taskText){
   const li=document.createElement("li");
   li.textContent=taskText;
+  //when li is clicked
+  li.addEventListener("click",()=>{
+    li.classList.toggle("completed");
+  });
 
 
   //Create a delete button
