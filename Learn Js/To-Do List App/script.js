@@ -14,5 +14,11 @@ function createElementTask(taskText){
   const deleteBtn=document.createElement("button");
   deleteBtn.textContent="X";
   deleteBtn.className="delete";
+
+
+  //When the delete btn is clicked.
+  deleteBtn.addEventListener("click",(e)=>{
+    
+  });
 }
 
