@@ -6,6 +6,11 @@ const listTask=document.getElementById("taskList");
 
 // ==Create Element Task Function ==
 
-function createElementTask(){
+function createElementTask(taskText){
+  const li=document.createElement("li");
+  li.textContent=taskText;
+
+
   
+
 }
