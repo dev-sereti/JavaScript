@@ -36,6 +36,9 @@ function createElementTask(taskText){
 function addTask(){
 
   const taskText=inputTask.value.trim();
+
+  //Check if taskText if empty
+  if(taskText==="")return;
 }
 
 
