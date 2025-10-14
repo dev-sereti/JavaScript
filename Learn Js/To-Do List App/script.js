@@ -50,10 +50,6 @@ function addTask(){
 }
 
 // STORAGE FUNCTION 
-
-function saveTask(taskText){
-  // Get existing tasks
-  let tasks=JSON.parse(localStorage.getItem("tasks")) || [];
-  taskText.push(taskText);
-  localStorage.setItem("tasks",JSON.stringify(tasks));
+function saveTask(){
+  
 }
