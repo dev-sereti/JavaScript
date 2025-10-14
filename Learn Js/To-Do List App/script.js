@@ -54,4 +54,6 @@ function addTask(){
 function saveTask(taskText){
   // Get existing tasks
   let tasks=JSON.parse(localStorage.getItem("tasks")) || [];
+  tasks.push(taskText); // Add the new task.
+  localStorage.setItem("tasks",JSON.stringify(tasks));  // Save updated list
 }
