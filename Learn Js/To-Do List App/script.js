@@ -55,4 +55,6 @@ function saveTask(){
   // get tasks from localStorage
 
   let tasks=JSON.parse(localStorage.getItem("tasks")) || [];
+  tasks.push(taskText);
+  localStorage.setItem("tasks",JSON.stringify(tasks));
 }
