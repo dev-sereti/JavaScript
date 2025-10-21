@@ -72,3 +72,6 @@ function removeTask(taskText){
     listTask.appendChild(li); // Add it to the page
   });
  }
+
+ // When "Add" button is clicked → run addTask()
+ btnAdd.addEventListener("click",addTask);
