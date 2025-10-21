@@ -63,3 +63,5 @@ function removeTask(taskText){
   tasks=tasks.filter(task=> task !==taskText);  // Keep all except the one clicked
   localStorage.setItem("tasks",JSON.stringify(tasks));
 }
+
+// Load all saved tasks when the page is opened
