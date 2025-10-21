@@ -58,3 +58,7 @@ function saveTask(){
   tasks.push(taskText);
   localStorage.setItem("tasks",JSON.stringify(tasks));
 }
+function removeTask(taskText){
+  
+  
+}
