@@ -65,3 +65,6 @@ function removeTask(taskText){
 }
 
 // Load all saved tasks when the page is opened
+ function loadTasks(){
+  
+ }
