@@ -67,4 +67,8 @@ function removeTask(taskText){
 // Load all saved tasks when the page is opened
  function loadTasks(){
   let tasks=JSON.parse(localStorage.getItem("tasks")) || []; //get tasks from localStorage
+  tasks.forEach(taskText =>{ // For each task text
+    const li= createTaskElement(taskText);
+    listTask.appendChild(li);
+  });
  }
