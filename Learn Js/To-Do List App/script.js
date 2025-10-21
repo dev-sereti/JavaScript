@@ -60,6 +60,7 @@ function saveTask(){
 }
 function removeTask(taskText){
   let tasks=JSON.parse(localStorage.getItem("tasks")) || []; //get tasks from localStorage
+  tasks=tasks.filter(task=> task !==taskText);  // Keep all except the one clicked
 
   
 }
