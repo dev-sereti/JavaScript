@@ -68,7 +68,7 @@ function removeTask(taskText){
  function loadTasks(){
   let tasks=JSON.parse(localStorage.getItem("tasks")) || []; //get tasks from localStorage
   tasks.forEach(taskText =>{ // For each task text
-    const li= createTaskElement(taskText);
+    const li= createTaskElement(taskText);  // Build an <li> element
     listTask.appendChild(li);
   });
  }
