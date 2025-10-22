@@ -11,5 +11,11 @@ buttons.forEach(button=>{
         const value=button.dataset.value; // Get the button's data-value
 
         // Clear button logic
+
+        if(button.id==="clear"){
+            currentInput="";  // Reset everything
+            display.textContent="0"
+            return;
+        }
     });
 });
