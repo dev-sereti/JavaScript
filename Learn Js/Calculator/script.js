@@ -9,5 +9,7 @@ let currentInput="";
 buttons.forEach(button=>{
     button.addEventListener("click",()=>{
         const value=button.dataset.value; // Get the button's data-value
+
+        // Clear button logic
     });
 });
