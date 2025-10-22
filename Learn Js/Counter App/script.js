@@ -16,6 +16,6 @@ incrementBtn.addEventListener("click",()=>{
 
 // Decrement.
 decrementBtn.addEventListener("click",()=>{
-    count--;
+    count--; //When "-" is clicked → decrease the count by 1
     updateDisplay();
 });
