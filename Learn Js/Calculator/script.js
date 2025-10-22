@@ -31,7 +31,9 @@ buttons.forEach(button=>{
                 display.textContent="Error"; // Show error if invalid input
                 currentInput="";
             }
+            return;
         }
+        currentInput+=value; // Add value to the input
 
     });
 });
