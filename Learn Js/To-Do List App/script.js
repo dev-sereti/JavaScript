@@ -1,4 +1,3 @@
-// =================== 1. GET HTML ELEMENTS ===================
 const inputTask = document.getElementById("taskInput"); // text input element
 const btnAdd = document.getElementById("addBtn");       // add button
 const listTask = document.getElementById("taskList");   // <ul> or <ol> for tasks
