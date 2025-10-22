@@ -52,7 +52,6 @@ function handleTaskDelete(taskText, liElement) {
   removeTask(taskText);  // remove from localStorage
 }
 
-// =================== 5. STORAGE FUNCTIONS ===================
 // Save a task string into localStorage
 function saveTask(taskText) {
   const tasks = JSON.parse(localStorage.getItem("tasks")) || []; // load or empty array
