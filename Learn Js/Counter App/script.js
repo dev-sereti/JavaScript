@@ -9,3 +9,6 @@ const resetBtn=document.getElementById("reset");
 let count=0;
 
 // Increment
+incrementBtn.addEventListener("click",()=>{
+
+});
