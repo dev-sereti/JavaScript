@@ -3,7 +3,7 @@ const inputTask = document.getElementById("taskInput"); // text input element
 const btnAdd = document.getElementById("addBtn");       // add button
 const listTask = document.getElementById("taskList");   // <ul> or <ol> for tasks
 
-// =================== 2. CREATE TASK ELEMENT ===================
+
 // Build a single <li> with text and delete button, return it.
 function createTaskElement(taskText) {
   const li = document.createElement("li");     // create <li>
