@@ -17,7 +17,6 @@ buttons.forEach(button=>{
             display.textContent="0"
             return;
         }
-
         // Equals button logic
 
         if(button.id==="equals"){
@@ -28,7 +27,10 @@ buttons.forEach(button=>{
                 display.textContent=result;
                 currentInput=result.toString();
 
-            }catch {}
+            }catch (error) {
+                display.textContent="Error"; // Show error if invalid input
+                currentInput="";
+            }
         }
 
     });
