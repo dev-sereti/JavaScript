@@ -34,6 +34,7 @@ buttons.forEach(button=>{
             return;
         }
         currentInput+=value; // Add value to the input
+        display.textContent=currentInput; //Update the screen
 
     });
 });
