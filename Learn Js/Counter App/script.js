@@ -11,6 +11,7 @@ let count=0;
 //Increment button clicked.
 incrementBtn.addEventListener("click",()=>{
     count++; // Count increases by 1.
+    updateDisplay();
     
 });
 
