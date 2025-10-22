@@ -10,5 +10,6 @@ let count=0;
 
 // Increment
 incrementBtn.addEventListener("click",()=>{
-
+    count++;
+    updateDisplay(); // update the number shown on screen
 });
