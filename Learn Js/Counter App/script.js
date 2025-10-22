@@ -23,4 +23,8 @@ decrementBtn.addEventListener("click",()=>{
         alert("Decrement limit reached....")
     }
 });
+// Function to update dispaly.
+function updateDisplay(){
+
+}
 
