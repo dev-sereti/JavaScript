@@ -1,25 +1,27 @@
 // =================== 1. Get HTML Elements ===================
-// Get references to the count display and buttons by their IDs
 const countDisplay = document.getElementById("count");
 const incrementBtn = document.getElementById("increment");
 const decrementBtn = document.getElementById("decrement");
 const resetBtn = document.getElementById("reset");
 
 // =================== 2. Initialize Count ===================
-// Start with a value of 0 (the state of our counter)
 let count = 0;
 
 // =================== 3. Event Listeners ===================
 
-// When "+" is clicked → increase the count by 1
+// When "+" is clicked → increase count by 1
 incrementBtn.addEventListener("click", () => {
-  count++; // same as count = count + 1
-  updateDisplay(); // update the number shown on screen
+  count++;             // add 1
+  updateDisplay();     // refresh the displayed value
 });
 
-// When "-" is clicked → decrease the count by 1
+// When "-" is clicked → decrease count, but not below 0
 decrementBtn.addEventListener("click", () => {
-  count--;
+  if (count > 0) {     // check condition before subtracting
+    count--;           // only subtract if count is above 0
+  } else {
+    alert("❗ The counter cannot go below zero."); // optional message
+  }
   updateDisplay();
 });
 
@@ -30,7 +32,6 @@ resetBtn.addEventListener("click", () => {
 });
 
 // =================== 4. Update Function ===================
-// This function updates the displayed number in the browser
 function updateDisplay() {
-  countDisplay.textContent = count; // change the text inside <div id="count">
+  countDisplay.textContent = count;
 }
