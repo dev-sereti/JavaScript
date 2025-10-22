@@ -9,5 +9,6 @@ const resetBtn=document.getElementById("reset");
 let count=0;
 
 //Increment button clicked.
+incrementBtn.addEventListener("click",()=>{
 
-in
+});
