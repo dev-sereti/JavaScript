@@ -63,7 +63,5 @@ function removeTask(taskText){
 
  // When "Add" button is clicked → run addTask()
  btnAdd.addEventListener("click",addTask);
-
  // When the page loads → automatically load existing tasks
-
  window.onload = loadTasks;
