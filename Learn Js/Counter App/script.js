@@ -13,3 +13,9 @@ incrementBtn.addEventListener("click",()=>{
     count++;
     updateDisplay(); // update the number shown on screen
 });
+
+// Decrement.
+decrementBtn.addEventListener("click",()=>{
+    count--;
+    updateDisplay();
+});
