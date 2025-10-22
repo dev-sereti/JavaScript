@@ -19,6 +19,7 @@ incrementBtn.addEventListener("click",()=>{
 decrementBtn.addEventListener("click",()=>{
     if(count>=0){
         count--;
+        updateDisplay();
 
     }else{
         alert("Decrement limit reached....")
