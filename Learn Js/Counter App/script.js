@@ -28,6 +28,6 @@ resetBtn,addEventListener("click",()=>{
 
 // This function updates the displayed number in the browser
 function updateDisplay(){
-    countDisplay.textContent=count;
+    countDisplay.textContent=count; // change the text inside <div id="count">
 
 }
