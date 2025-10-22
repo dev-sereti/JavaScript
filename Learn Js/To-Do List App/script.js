@@ -75,7 +75,6 @@ function loadTasks() {
   });
 }
 
-// =================== 6. INITIALIZATION ===================
 // Wire up event listeners. Ensure elements exist (script should be loaded after HTML).
 btnAdd.addEventListener("click", addTask);
 window.onload = loadTasks;
