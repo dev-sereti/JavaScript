@@ -25,6 +25,6 @@ decrementBtn.addEventListener("click",()=>{
 });
 // Function to update dispaly.
 function updateDisplay(){
-
+    counter.textContent=count; //Update the element content.
 }
 
