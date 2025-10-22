@@ -34,18 +34,12 @@ function createElementTask(taskText){
 
 // === Add task ===
 function addTask(){
-
   const taskText=inputTask.value.trim();
-  
   if(taskText==="")return;
-
   const li =createElementTask(taskText);
-
   saveTask(taskText);
-
   listTask.appendChild(li);
-
-  taskText.value="";
+  inputTask.value="";
 }
 
 // STORAGE FUNCTION 
