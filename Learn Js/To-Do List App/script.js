@@ -73,7 +73,6 @@ function loadTasks() {
     listTask.appendChild(li);
   });
 }
-
 // Wire up event listeners. Ensure elements exist (script should be loaded after HTML).
 btnAdd.addEventListener("click", addTask);
 window.onload = loadTasks;
