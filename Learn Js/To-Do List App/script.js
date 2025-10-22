@@ -5,11 +5,9 @@ const btnAdd=document.getElementById("addBtn");
 const listTask=document.getElementById("taskList");
 
 // ==Create Element Task Function ==
-
 function createElementTask(taskText){
   const li=document.createElement("li");
   li.textContent=taskText;
-
   li.addEventListener("click",()=>{
     li.classList.toggle("completed");
   });
@@ -42,10 +40,8 @@ function addTask(){
 }
 
 // STORAGE FUNCTION 
-function saveTask(){
-  
+function saveTask(taskText){
   // get tasks from localStorage
-
   let tasks=JSON.parse(localStorage.getItem("tasks")) || [];
   tasks.push(taskText);
   localStorage.setItem("tasks",JSON.stringify(tasks));
