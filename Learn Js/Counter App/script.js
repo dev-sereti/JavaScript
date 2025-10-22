@@ -26,6 +26,8 @@ resetBtn,addEventListener("click",()=>{
     updateDisplay();
 });
 
+// This function updates the displayed number in the browser
 function updateDisplay(){
-    
+    countDisplay.textContent=count;
+
 }
