@@ -6,3 +6,5 @@ const decrementBtn=document.getElementById("decrement");
 const resetBtn=document.getElementById("reset");
 
 // Start with a value of 0.
+
+let count=0;
