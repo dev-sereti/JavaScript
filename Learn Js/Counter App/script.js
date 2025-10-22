@@ -19,3 +19,9 @@ decrementBtn.addEventListener("click",()=>{
     count--; //When "-" is clicked → decrease the count by 1
     updateDisplay();
 });
+
+//When "Reset" is clicked → return count to 0
+resetBtn,addEventListener("click",()=>{
+    count=0;
+    updateDisplay();
+});
