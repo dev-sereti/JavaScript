@@ -42,7 +42,7 @@ function addTask() {
   inputTask.value = "";       // clear input field
 }
 
-// =================== 4. TASK DELETE HANDLER ===================
+
 // Separate function to handle deleting both UI and storage
 function handleTaskDelete(taskText, liElement) {
   // Optional: confirm deletion
