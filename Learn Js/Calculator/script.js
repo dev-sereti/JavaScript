@@ -8,6 +8,6 @@ let currentInput="";
 // Add Event Listeners to All Buttons
 buttons.forEach(button=>{
     button.addEventListener("click",()=>{
-
+        const value=button.dataset.value;
     });
 });
