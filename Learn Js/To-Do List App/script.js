@@ -29,7 +29,7 @@ function createTaskElement(taskText) {
   return li;                 // return the constructed element
 }
 
-// =================== 3. ADD TASK ===================
+// Add task
 function addTask() {
   const taskText = inputTask.value.trim(); // read value from the input
 
