@@ -25,3 +25,7 @@ resetBtn,addEventListener("click",()=>{
     count=0;
     updateDisplay();
 });
+
+function updateDisplay(){
+    
+}
