@@ -17,5 +17,19 @@ buttons.forEach(button=>{
             display.textContent="0"
             return;
         }
+
+        // Equals button logic
+
+        if(button.id==="equals"){
+
+            //Evaluate the math expression safely using eval()
+            try{
+                const result=eval(currentInput);
+                display.textContent=result;
+                currentInput=result.toString();
+
+            }catch {}
+        }
+
     });
 });
