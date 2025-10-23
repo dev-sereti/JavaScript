@@ -12,5 +12,5 @@ function updateClock(){
     let seconds=now.getSeconds;
 
     // Add leading zeros if needed
-    hours=hours<10?"0"+hours:hours;
+    hours=hours < 10 ? "0" + hours:hours;
 }
