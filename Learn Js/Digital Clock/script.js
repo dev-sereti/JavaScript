@@ -10,4 +10,7 @@ function updateClock(){
     let hours=now.getHours;
     let minutes=now.getMinutes;
     let seconds=now.getSeconds;
+
+    // Add leading zeros if needed
+    hours=hours<10?"0"+hours:hours;
 }
