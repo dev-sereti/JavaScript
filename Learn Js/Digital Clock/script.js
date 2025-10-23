@@ -5,4 +5,9 @@ const clock=document.getElementById("clock");
 
 function updateClock(){
     const now =new Date(); // Get current date and time
+
+    // Extract hours, minutes, seconds
+    let hours=now.getHours;
+    let minutes=now.getMinutes;
+    let seconds=now.getSeconds;
 }
