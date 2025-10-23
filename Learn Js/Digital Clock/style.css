@@ -2,7 +2,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #111;
-  color: #0f0;
+  color: rgb(179, 26, 218);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +16,8 @@ body {
 #clock {
   background: rgba(0, 255, 0, 0.1);
   padding: 20px 40px;
-  border: 2px solid #0f0;
+  border: 2px solid rgb(33, 142, 175);
   border-radius: 10px;
-  box-shadow: 0 0 20px #0f0;
-  text-shadow: 0 0 10px #0f0;
+  box-shadow: 0 0 20px rgb(5, 65, 121);
+  text-shadow: 0 0 10px rgb(209, 106, 10);
 }
