@@ -23,3 +23,5 @@ function updateClock(){
      // Update the HTML content
      clock.textContent=timeString;
 }
+// Update clock every second
+setInterval(updateClock, 1000);
