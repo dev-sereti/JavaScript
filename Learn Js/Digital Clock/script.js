@@ -19,4 +19,7 @@ function updateClock(){
 
      // Format time string
      const timeString = `${hours}:${minutes}:${seconds}`;
+
+     // Update the HTML content
+     clock.textContent=timeString;
 }
