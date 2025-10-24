@@ -16,9 +16,7 @@ function updateClock(){
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-
   // Format time 
-
   const timeString = `${hours}:${minutes}:${seconds}`;
   // Print timeString to clock HTML element
   clock.textContent=timeString;
@@ -26,5 +24,6 @@ function updateClock(){
 }
 //Update clock every second
 setInterval(updateClock,1000);
+
 //Update time immediately. 
 updateClock();
