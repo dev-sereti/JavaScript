@@ -13,7 +13,9 @@ btn.addEventListener("click",()=>{
      const randomIndex = Math.floor(Math.random() * colors.length);
 
      // Set Random color
-
      const randomColor = colors[randomIndex];
+
+      // Change background and update displayed color
+      document.body.style.backgroundColor = randomColor;
 
 });
