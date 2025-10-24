@@ -17,5 +17,6 @@ btn.addEventListener("click",()=>{
 
       // Change background and update displayed color
       document.body.style.backgroundColor = randomColor;
+      colorCode.textContent = randomColor;
 
 });
