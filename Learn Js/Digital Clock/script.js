@@ -17,4 +17,8 @@ function updateClock(){
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
 
+  // Format time 
+
+  const timeString = ``;
+
 }
