@@ -26,3 +26,5 @@ function updateClock(){
 }
 //Update clock every second
 setInterval(updateClock,1000);
+//Update time immediately. 
+updateClock();
