@@ -24,3 +24,5 @@ function updateClock(){
   clock.textContent=timeString;
 
 }
+//Update clock every second
+setInterval(updateClock,1000);
