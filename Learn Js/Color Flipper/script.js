@@ -8,5 +8,8 @@ const colorCode = document.getElementById("colorCode");
 // Add event listener to button
 
 btn.addEventListener("click",()=>{
+    
+     // Generate random index
+     const randomIndex = Math.floor(Math.random() * colors.length);
 
 });
