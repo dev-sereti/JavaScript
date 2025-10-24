@@ -6,9 +6,9 @@ function updateClock(){
   // Get date,hours, minutes and seconds.
   const now = new Date();
 
-  hours = now.getHours;
-  minutes=now.getMinutes;
-  seconds=now.getSeconds;
+  hours = now.getHours();
+  minutes=now.getMinutes();
+  seconds=now.getSeconds();
 
   // Add 0 to hrs, min and sec if needed.
 
