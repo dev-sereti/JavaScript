@@ -19,6 +19,6 @@ function updateClock(){
 
   // Format time 
 
-  const timeString = ``;
+  const timeString = `${hours}:${minutes}:${seconds}`;
 
 }
