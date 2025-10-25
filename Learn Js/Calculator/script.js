@@ -27,9 +27,13 @@ buttons.forEach(button=>{
                 const result = eval(currentInput);
                 display.textContent = result; // Show result
                 currentInput =  result.toString(); // Save result for next operation
-            }catch{
+            }catch (error){
+                display.textContent="Error";
+                currentInput="";
 
             }
+            return;
          }
+         
     });
 });
