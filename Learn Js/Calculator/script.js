@@ -26,6 +26,7 @@ buttons.forEach(button=>{
                 //Evaluate the math expression safely using eval
                 const result = eval(currentInput);
                 display.textContent = result; // Show result
+                currentInput =  result.toString(); // Save result for next operation
             }catch{
 
             }
