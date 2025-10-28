@@ -8,5 +8,12 @@ const passwordInput = document.getElementById("password");
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault(); // prevent default page load.
+    validateForm();
 
 });
+
+//Validation Function
+
+function validateForm(){
+    
+}
