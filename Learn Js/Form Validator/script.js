@@ -39,7 +39,10 @@ function validateForm(){
         showError(passwordInput, " Create a strong password");
     }
 
+    // If all fields are valid
 
-
+    else{
+        alert("Registration Successful!");
+    }
 
 }
