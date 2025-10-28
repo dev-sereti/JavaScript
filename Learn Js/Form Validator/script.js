@@ -43,6 +43,8 @@ function validateForm(){
 
     else{
         alert("Registration Successful!");
+        form.reset();
     }
 
 }
+
