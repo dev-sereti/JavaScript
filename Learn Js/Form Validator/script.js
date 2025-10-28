@@ -25,6 +25,10 @@ function validateForm(){
     clearErrors();
 
     //Name Validation
-    
+    if(nameValue === ""){
+        showError(nameInput, " Name is required");
+
+    }
+
 
 }
