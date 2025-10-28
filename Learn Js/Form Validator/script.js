@@ -20,4 +20,8 @@ function validateForm(){
     const emailValue = emailInput.value.trim();
     const passwordValue = passwordInput.value.trim();
 
+
+    // Clear all old error messages
+    clearErrors();
+
 }
