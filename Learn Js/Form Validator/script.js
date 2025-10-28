@@ -34,7 +34,12 @@ function validateForm(){
         showError(emailInput, " Email is required");
     }
 
-    
+    //Password Validation
+    else if(!isStrongPassword){
+        showError(passwordInput, " Create a strong password");
+    }
+
+
 
 
 }
