@@ -7,6 +7,6 @@ const passwordInput = document.getElementById("password");
 // Listen for form submission
 
 form.addEventListener("submit",(e)=>{
-    e.preventDefault(); 
+    e.preventDefault(); // prevent default page load.
 
 });
