@@ -27,8 +27,14 @@ function validateForm(){
     //Name Validation
     if(nameValue === ""){
         showError(nameInput, " Name is required");
-
     }
+
+    //Email Validation using RegEx
+    else if(!isValidEmail(emailValue)){
+        showError(emailInput, " Email is required");
+    }
+
+    
 
 
 }
