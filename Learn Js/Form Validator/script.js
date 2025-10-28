@@ -24,4 +24,7 @@ function validateForm(){
     // Clear all old error messages
     clearErrors();
 
+    //Name Validation
+    
+
 }
