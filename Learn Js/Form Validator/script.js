@@ -15,5 +15,9 @@ form.addEventListener("submit",(e)=>{
 //Validation Function
 
 function validateForm(){
-    
+    // Get input values
+    const nameValue = nameInput.value.trim();
+    const emailValue = emailInput.value.trim();
+    const passwordValue = passwordInput.value.trim();
+
 }
