@@ -63,9 +63,8 @@ function clearErrors(){
     const errorMessages = document.querySelectorAll(".error-message");
     const inputs = document.querySelectorAll("input");
 
-
     errorMessages.forEach(msg => msg.textContent = "" );
-    inputs.forEach(inputs => input.style.borderColor = "#ddd");
+    inputs.forEach(input => input.style.borderColor = "#ddd");
 
 }
 
