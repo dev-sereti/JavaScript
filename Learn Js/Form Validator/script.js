@@ -71,6 +71,7 @@ function clearErrors(){
 // Function: Validate Email with RegEx
 
 function isValidEmail(){
-    
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
 }
 
