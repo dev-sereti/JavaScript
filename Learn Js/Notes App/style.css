@@ -1,0 +1,103 @@
+/* Basic page setup */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f5f7;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Main app container */
+.app-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.app-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Input area styling */
+.note-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Textarea for writing a note */
+#noteText {
+  resize: none;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Save button */
+#saveBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#saveBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Container holding all notes */
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual note styling */
+.note {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Buttons inside each note */
+.note button {
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+/* Edit and Delete button styles */
+.edit-btn {
+  background-color: #ffc107;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
