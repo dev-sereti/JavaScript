@@ -70,8 +70,13 @@ function clearErrors(){
 
 // Function: Validate Email with RegEx
 
-function isValidEmail(){
+function isValidEmail(email){
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailPattern.test(email);
+}
+
+// Function: Validate Password Strength
+function isStrongPassword (password){
+
 }
 
