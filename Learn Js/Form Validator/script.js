@@ -1,84 +1,74 @@
-//Get form and input references
+// === Get form and input references ===
 const form = document.getElementById("signupForm");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("password");
 
-// Listen for form submission
-
-form.addEventListener("submit",(e)=>{
-    e.preventDefault(); // prevent default page load.
-    validateForm();
-
+// === Listen for form submission ===
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // Prevent default page reload
+  validateForm();
 });
 
-//Validation Function
+// === Validation Function ===
+function validateForm() {
+  // Get input values
+  const nameValue = nameInput.value.trim();
+  const emailValue = emailInput.value.trim();
+  const passwordValue = passwordInput.value.trim();
 
-function validateForm(){
-    // Get input values
-    const nameValue = nameInput.value.trim();
-    const emailValue = emailInput.value.trim();
-    const passwordValue = passwordInput.value.trim();
+  // Clear all old error messages
+  clearErrors();
 
+  // === Name Validation ===
+  if (nameValue === "") {
+    showError(nameInput, "Name is required");
+  }
 
-    // Clear all old error messages
-    clearErrors();
+  // === Email Validation using RegEx ===
+  else if (!isValidEmail(emailValue)) {
+    showError(emailInput, "Enter a valid email address");
+  }
 
-    //Name Validation
-    if(nameValue === ""){
-        showError(nameInput, " Name is required");
-    }
+  // === Password Validation ===
+  else if (!isStrongPassword(passwordValue)) {
+    showError(passwordInput, 
+      "Password must be at least 8 characters long, contain a number, uppercase letter, and special character"
+    );
+  }
 
-    //Email Validation using RegEx
-    else if(!isValidEmail(emailValue)){
-        showError(emailInput, " Email is required");
-    }
-
-    //Password Validation
-    else if(!isStrongPassword){
-        showError(passwordInput, " Create a strong password");
-    }
-
-    // If all fields are valid
-
-    else{
-        alert("Registration Successful!");
-        form.reset();
-    }
-
+  // === If all fields are valid ===
+  else {
+    alert("✅ Registration Successful!");
+    form.reset(); // Clear form fields
+  }
 }
 
-// Function: Show error message
-function showError(input,message){
-    const formControl = input.parentElement;
-    const errorDisplay =formControl.querrySelector(".error-message");
-    errorDisplay.textContent = message;
-    input.style.borderColor = "red";
-
+// === Function: Show error message ===
+function showError(input, message) {
+  const formControl = input.parentElement;
+  const errorDisplay = formControl.querySelector(".error-message");
+  errorDisplay.textContent = message;
+  input.style.borderColor = "red";
 }
 
-//Function: Clear previous errors
+// === Function: Clear previous errors ===
+function clearErrors() {
+  const errorMessages = document.querySelectorAll(".error-message");
+  const inputs = document.querySelectorAll("input");
 
-function clearErrors(){
-    const errorMessages = document.querySelectorAll(".error-message");
-    const inputs = document.querySelectorAll("input");
-
-    errorMessages.forEach(msg => msg.textContent = "" );
-    inputs.forEach(input => input.style.borderColor = "#ddd");
-
+  errorMessages.forEach(msg => msg.textContent = "");
+  inputs.forEach(input => input.style.borderColor = "#ddd");
 }
 
-// Function: Validate Email with RegEx
-
-function isValidEmail(email){
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailPattern.test(email);
+// === Function: Validate Email with RegEx ===
+function isValidEmail(email) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailPattern.test(email);
 }
 
-// Function: Validate Password Strength
-function isStrongPassword (password){
-    const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/ ;
-    return passwordPattern.test(password);
-
+// === Function: Validate Password Strength ===
+function isStrongPassword(password) {
+  const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/;
+  return passwordPattern.test(password);
 }
-
