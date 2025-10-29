@@ -77,6 +77,8 @@ function isValidEmail(email){
 
 // Function: Validate Password Strength
 function isStrongPassword (password){
+    const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/ ;
+    return passwordPattern.test(password);
 
 }
 
