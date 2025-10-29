@@ -68,3 +68,9 @@ function clearErrors(){
 
 }
 
+// Function: Validate Email with RegEx
+
+function isValidEmail(){
+    
+}
+
