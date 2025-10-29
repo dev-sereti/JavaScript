@@ -50,6 +50,10 @@ function validateForm(){
 
 // Function: Show error message
 function showError(input,message){
-    
+    const formControl = input.parentElement;
+    const errorDisplay =formControl.querrySelector(".error-message");
+    errorDisplay.textContent = message;
+    input.style.borderColor = "red";
+
 }
 
