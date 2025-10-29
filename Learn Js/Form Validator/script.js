@@ -57,3 +57,9 @@ function showError(input,message){
 
 }
 
+//Function: Clear previous errors
+
+function clearErrors(){
+    
+}
+
